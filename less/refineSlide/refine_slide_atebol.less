@@ -1,0 +1,366 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+      REFINE SLIDE ATEBOL THEME.LESS
+-----------------------------------------*/
+
+@rs-theme-color: #FF8740;
+@rs-font-color: @light-color;
+
+.rs-atebol-theme {
+
+    &.rs-wrap {
+        overflow: hidden;
+        max-height:700px;
+    }
+
+    .rs-slide-bg {
+        background-color:@dark-color;
+        &>ul {
+            overflow:hidden;
+            @media @XL {
+               height:700px;
+                .rs-slide-image {
+                    height:800px;
+                }
+            }
+            @media @LG {
+                height:600px;
+                .rs-slide-image {
+                    height:700px;
+                }
+            }
+            @media @MD {
+                height:400px;
+                .rs-slide-image {
+                    height:500px;
+                }
+            }
+            @media @SM {
+                height:350px;
+                .rs-slide-image {
+                    height:450px;
+                }
+            }
+            @media @XS, @XXS {
+                height:300px;
+                .rs-slide-image {
+                    height:500px;
+                }
+            }
+        }
+    }
+
+    /* ===[ Image ]=== */
+
+    .rs-slide-image {
+        max-width: none;
+        max-height: none;
+        width:auto;
+        height:auto;
+    }
+
+    /* ===[ Slider ]=== */
+
+    .rs-slider {
+
+        & > li {
+            .container {
+                height:100%;
+                position: absolute;
+                left: 50%;
+                top: 0;
+
+                @media @XL {
+                    margin-left: -580px;
+                }
+                @media @LG {
+                    margin-left: -540px;
+                }
+                @media @MD {
+                    margin-left: -440px;
+                }
+                @media @SM {
+                    margin-left: -330px;
+                }
+                @media @XS, @XXS {
+                    margin-left: 0;
+                    left: 60px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    /* ===[ Tacks ]=== */
+
+    .rs-tack-wrap {
+
+        position: absolute;
+        z-index:101;
+
+        li {
+            a {
+                display: block;
+                cursor:pointer;
+            }
+            i {
+                color:@light-color;
+                font-size:18px;
+
+                @media @XS, @XXS {
+                    font-size:14px;
+                }
+
+                &.inactive {
+
+                }
+                &.active {
+                    display: none;
+                }
+            }
+            .current {
+                i {
+                    &.inactive {
+                        display: none;
+                    }
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.rs-right {
+            right:20px;
+            top:50%;
+            li {
+                margin-bottom:5px;
+            }
+            @media @MD, @SM {
+                top:60%;
+            }
+            @media @XS, @XXS {
+                top:30%;
+                li {
+                    margin-bottom:2px;
+                }
+            }
+
+        }
+        &.rs-left {
+            left:20px;
+            top:50%;
+            li {
+                margin-bottom:5px;
+            }
+        }
+        &.rs-top {
+            top:10px;
+            left:50%;
+            li {
+                float:left;
+                margin-right:5px;
+            }
+        }
+        &.rs-bottom {
+            bottom:10px;
+            left:50%;
+            li {
+                float:left;
+                margin-right:5px;
+            }
+        }
+
+    }
+
+    /* ===[ Captions ]=== */
+
+    .rs-caption {
+        padding-bottom: 20px;
+        height: auto;
+        color: @rs-font-color;
+        opacity: 1;
+
+        p {
+            color: #fff;
+            line-height:24px;
+            margin-bottom:10px;
+
+            @media @XL {
+                font-size: 22px;
+            }
+            @media @LG {
+                font-size: 20px;
+            }
+            @media @MD {
+                font-size: 18px;
+                margin-bottom:5px;
+            }
+            @media @SM {
+                font-size: 16px;
+                margin-bottom:5px;
+            }
+            @media @XS, @XXS {
+                font-size: 14px;
+                margin-bottom:0px;
+            }
+
+            &:nth-child(2) {
+                font-family: @font-bold;
+            }
+        }
+
+        .rs-caption-title {
+
+            overflow: hidden;
+            margin-bottom: 10px;
+
+            @media @XL {
+                font-size: 70px;
+                line-height: 70px;
+                height: 80px;
+            }
+            @media @LG {
+                font-size: 60px;
+                line-height: 60px;
+                height: 70px;
+            }
+            @media @MD {
+                font-size: 50px;
+                line-height: 50px;
+                height: 60px;
+            }
+            @media @SM {
+                font-size: 40px;
+                line-height: 40px;
+                height: 50px;
+            }
+            @media @XS, @XXS {
+                font-size: 30px;
+                line-height: 30px;
+                height: 40px;
+            }
+
+            span {
+                font-family: @font-bold;
+
+                span {
+                    color: @rs-theme-color;
+
+                    span {
+                        color: @rs-font-color;
+                        font-family: @font-light;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .rs-caption-content {
+            margin-bottom: 10px;
+        }
+
+        .rs-caption-button {
+            border: 2px solid @light-color;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            background-color: transparent;
+            padding: 6px 30px;
+            margin-left:0;
+
+            &:hover {
+                border: 2px solid @rs-theme-color;
+                color: @light-color;
+                background-color: @rs-theme-color;
+            }
+        }
+
+        .rs-top-left {
+            -moz-border-radius: 5px 0 5px 0;
+            -webkit-border-radius: 5px 0 5px 0;
+            border-radius: 5px 0 5px 0;
+            border-top: none;
+            border-left: none;
+        }
+        .rs-bottom-right {
+            -moz-border-radius: 5px 0 5px 0;
+            -webkit-border-radius: 5px 0 5px 0;
+            border-radius: 5px 0 5px 0;
+            border-bottom: none;
+            border-right: none;
+        }
+        .rs-top-right {
+            -moz-border-radius: 0 5px 0 5px;
+            -webkit-border-radius: 0 5px 0 5px;
+            border-radius: 0 5px 0 5px;
+            border-top: none;
+            border-right: none;
+        }
+        .rs-bottom-left {
+            -moz-border-radius: 0 5px 0 5px;
+            -webkit-border-radius: 0 5px 0 5px;
+            border-radius: 0 5px 0 5px;
+            border-bottom: none;
+            border-left: none;
+        }
+        .rs-bottom {
+            -moz-border-radius: 0 0 5px 5px;
+            -webkit-border-radius: 0 0 5px 5px;
+            border-radius: 0 0 5px 5px;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+        .rs-top {
+            -moz-border-radius: 5px 5px 0 0;
+            -webkit-border-radius: 5px 5px 0 0;
+            border-radius: 5px 5px 0 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .rs-left {
+            -moz-border-radius: 5px 0 0 5px;
+            -webkit-border-radius: 5px 0 0 5px;
+            border-radius: 5px 0 0 5px;
+            border-left: none;
+            border-top: none;
+            border-bottom: none;
+        }
+        .rs-right {
+            -moz-border-radius: 0 5px 5px 0;
+            -webkit-border-radius: 0 5px 5px 0;
+            border-radius: 0 5px 5px 0;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+        }
+
+    }
+
+}
+
+
+.atebol-custom-title {
+
+    overflow: hidden;
+    font-size: 50px;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 10px;
+
+    span {
+        font-family: @font-bold;
+
+        span {
+            color: @rs-theme-color;
+
+            span {
+                color: @rs-font-color;
+                font-family: @font-light;
+                padding-left: 5px;
+            }
+        }
+    }
+}
