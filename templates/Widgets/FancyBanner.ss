@@ -12,8 +12,8 @@
 							<div class="rs-caption-content xxs-hide xs-hide">
                                 $CaptionContent
 							</div>
-                            <% if $CaptionButtonLink %>
-								<button class="rs-caption-button" href="$ButtonLink" onclick="">$ButtonLinkText</button>
+                            <% if $CaptionLink %>
+								<button class="rs-caption-button" href="$CaptionLink.URL" onclick="" <% if $OpenInNewWindow %>target="_blank"<% end_if %> >$CaptionLink.Title</button>
                             <% end_if %>
 						</div>
 					</div>

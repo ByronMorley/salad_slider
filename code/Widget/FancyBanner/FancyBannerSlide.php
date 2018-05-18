@@ -13,14 +13,12 @@ class FancyBannerSlide extends DataObject
 		'CustomExtTitle' => 'boolean',
 		'CaptionExtTitle' => 'Varchar',
 		'DarkenImage' => 'Varchar',
-		'CaptionButtonLink' => 'Boolean',
-		'ButtonLink' => 'Varchar',
-		'ButtonLinkText' => 'Varchar',
 	);
 
 	private static $has_one = array(
 		'Image' => 'Image',
-		'Banner' => 'WidgetFancyBanner'
+		'Banner' => 'WidgetFancyBanner',
+		'CaptionLink' => 'Link'
 	);
 
 	private static $summary_fields = array(
@@ -87,11 +85,6 @@ class FancyBannerSlide extends DataObject
 		 *     Caption
 		 *******************/
 
-		$captionButtonLink = CheckboxField::create('CaptionButtonLink', 'Add Button Link');
-		$captionLink = TextField::create('ButtonLink', 'URL');
-		$captionLinkText = TextField::create('ButtonLinkText', 'Text');
-		$captionLinkText->displayIf('CaptionButtonLink')->isChecked();
-		$captionLink->displayIf('CaptionButtonLink')->isChecked();
 
 		$caption = CheckboxField::create('Caption', 'Include Caption');
 		$captionLocations = array(
@@ -126,6 +119,10 @@ class FancyBannerSlide extends DataObject
 		$customExtTitle->displayIf("Caption")->isChecked();
 		$captionExtTitle->displayIf('CustomExtTitle')->isChecked();
 
+
+		$captionLink = LinkField::create('CaptionLinkID', 'Link to page or file');
+
+
 		$fields->addFieldsToTab('Root.Caption', array(
 			$caption,
 			$captionLocation,
@@ -133,9 +130,7 @@ class FancyBannerSlide extends DataObject
 			$captionTitle,
 			$customExtTitle,
 			$captionExtTitle,
-			$captionButtonLink,
 			$captionLink,
-			$captionLinkText
 		));
 
 		$fields->removeByName('SortOrder');
