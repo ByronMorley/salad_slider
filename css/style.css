@@ -5,7 +5,7 @@
 /*  750px   */
 /*  100%    */
 /*  100%    */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&amp;subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;subset=latin-ext);
 
 /*
  * jQuery RefineSlide plugin v0.3
@@ -216,7 +216,7 @@
 /*  750px   */
 /*  100%    */
 /*  100%    */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&amp;subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;subset=latin-ext);
 /*-----------------------------------------
       REFINE SLIDE ATEBOL THEME.LESS
 -----------------------------------------*/
@@ -467,6 +467,7 @@
 }
 .rs-atebol-theme .rs-caption .rs-caption-title span {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .rs-atebol-theme .rs-caption .rs-caption-title span span {
   color: #FF8740;
@@ -474,6 +475,7 @@
 .rs-atebol-theme .rs-caption .rs-caption-title span span span {
   color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   padding-left: 5px;
 }
 .rs-atebol-theme .rs-caption .rs-caption-content {
