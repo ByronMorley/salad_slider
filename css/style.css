@@ -569,6 +569,18 @@
   color: #FFFFFF;
   padding-left: 5px;
 }
+i.icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../assets/icons/tacks.png") no-repeat -20px 0;
+}
+i.icon.circle-o {
+  background-position: 0 0;
+}
+i.icon.circle {
+  background-position: -20px 0;
+}
 
 /*
  * jQuery RefineSlide plugin v0.3
