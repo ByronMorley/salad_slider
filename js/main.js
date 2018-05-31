@@ -951,7 +951,7 @@
             }
         });
     }
-})(jQuery, window, document);;$(document).ready(function () {
+})($, window, document);;$(document).ready(function () {
     rsSlide();
     console.log('start');
 });
