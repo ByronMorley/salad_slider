@@ -1,5 +1,6 @@
 $(document).ready(function () {
-
+    rsSlide();
+    console.log('start');
 });
 
 function refinSlideInit() {

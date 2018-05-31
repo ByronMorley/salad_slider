@@ -15,8 +15,9 @@ class Salad_slider extends DataExtension
 
 	public function contentControllerInit()
 	{
-		Requirements::css(SALAD_SLIDER_DIR . '/css/style.css');;
-		Requirements::javascript(SALAD_SLIDER_DIR . '/js/main.min.js');
+		Requirements::css(SALAD_SLIDER_DIR . '/css/style.min.css');
+		Requirements::javascript(SALAD_SLIDER_DIR . '/ext/jquery/dist/jquery-old.js');
+		Requirements::javascript(SALAD_SLIDER_DIR . '/js/main.js');
 	}
 
 	public function getCMSFields()

@@ -225,8 +225,8 @@
 
                 var current = (i == this.currentPlace) ? "current" : "";
                 var $link = $('<a class="' + current + ' rs-slide-link-' + i + '" />').append(
-                    $('<i class="fa fa-circle-o inactive" aria-hidden="true"/>'),
-                    $('<i class="fa fa-circle active" aria-hidden="true"/>')
+                    $('<i class="circle-o inactive" aria-hidden="true"/>'),
+                    $('<i class="circle active" aria-hidden="true"/>')
                 );
                 var $tack = $('<li>').append($link);
                 this.$tackWrap.append($tack);

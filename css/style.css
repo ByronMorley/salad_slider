@@ -5,7 +5,6 @@
 /*  750px   */
 /*  100%    */
 /*  100%    */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;subset=latin-ext);
 
 /*
  * jQuery RefineSlide plugin v0.3
@@ -216,7 +215,6 @@
 /*  750px   */
 /*  100%    */
 /*  100%    */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;subset=latin-ext);
 /*-----------------------------------------
       REFINE SLIDE ATEBOL THEME.LESS
 -----------------------------------------*/
@@ -424,7 +422,7 @@
   }
 }
 .rs-atebol-theme .rs-caption p:nth-child(2) {
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .rs-atebol-theme .rs-caption .rs-caption-title {
   overflow: hidden;
@@ -466,7 +464,6 @@
   }
 }
 .rs-atebol-theme .rs-caption .rs-caption-title span {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 .rs-atebol-theme .rs-caption .rs-caption-title span span {
@@ -474,8 +471,7 @@
 }
 .rs-atebol-theme .rs-caption .rs-caption-title span span span {
   color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   padding-left: 5px;
 }
 .rs-atebol-theme .rs-caption .rs-caption-content {
@@ -563,14 +559,14 @@
   margin-bottom: 10px;
 }
 .atebol-custom-title span {
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .atebol-custom-title span span {
   color: #FF8740;
 }
 .atebol-custom-title span span span {
+  font-weight: 200;
   color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
   padding-left: 5px;
 }
 
