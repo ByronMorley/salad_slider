@@ -1,0 +1,10 @@
+---
+Name: salad-slider
+After: 'framework/*','cms/*'
+---
+Page:
+  extensions:
+    - Salad_slider
+SiteConfig:
+  extensions:
+    - CookieAdmin

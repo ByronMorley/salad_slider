@@ -1,0 +1,28 @@
+{
+  "name": "rgb-software/silverstripe-salad-slider",
+  "description": "custom banner slider",
+  "type": "silverstripe-module",
+  "homepage": "http://github.com/your-vendor-name/module-name",
+  "keywords": ["silverstripe", "content", "building"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {"name": "Byron Morley","email": "byron@regbsoftware.co.uk"}
+  ],
+  "support": {
+    "issues": "http://github.com/your-vendor-name/module-name/issues"
+  },
+  "config": {
+    "vendor-dir": "../"
+  },
+  "require": {
+    "silverstripe/cms": "~3.1",
+    "silverstripe/framework": "~3.1"
+  },
+  "extra": {
+    "installer-name": "salad-slider",
+    "screenshots": [
+      "relative/path/screenshot1.png",
+      "http://myhost.com/screenshot2.png"
+    ]
+  }
+}
