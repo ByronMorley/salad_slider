@@ -921,3 +921,15 @@ i.icon.circle {
 .rs-standard-theme.rs-wrap {
   margin-bottom: 10px;
 }
+.rs-standard-theme i.icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../assets/icons/tacks-dark.png") no-repeat -20px 0;
+}
+.rs-standard-theme i.icon.circle-o {
+  background-position: 0 0;
+}
+.rs-standard-theme i.icon.circle {
+  background-position: -20px 0;
+}
