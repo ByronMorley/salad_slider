@@ -42,7 +42,13 @@
                     height:450px;
                 }
             }
-            @media @XS, @XXS {
+            @media @XS{
+                height:300px;
+                .rs-slide-image {
+                    height:500px;
+                }
+            }
+            @media @XXS {
                 height:300px;
                 .rs-slide-image {
                     height:500px;
@@ -340,6 +346,21 @@
 
     }
 
+    i.icon {
+
+        display:block;
+        width:20px;
+        height:20px;
+        background: url("../assets/icons/tacks.png") no-repeat -20px 0;
+
+        &.circle-o {
+            background-position:0 0;
+        }
+        &.circle {
+            background-position: -20px 0;
+        }
+    }
+
 }
 
 
@@ -367,18 +388,4 @@
     }
 }
 
-i.icon {
-
-    display:block;
-    width:20px;
-    height:20px;
-    background: url("../assets/icons/tacks.png") no-repeat -20px 0;
-
-    &.circle-o {
-        background-position:0 0;
-    }
-    &.circle {
-        background-position: -20px 0;
-    }
-}
 

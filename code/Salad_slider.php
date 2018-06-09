@@ -11,15 +11,7 @@ class Salad_slider extends DataExtension
 
 	private static $has_many = array(
 	);
-
-	public function contentControllerInit()
-	{
-		Requirements::css(SALAD_SLIDER_DIR . '/css/style.min.css');
-
-		Requirements::javascript('components/jquery/jquery.min.js');
-		Requirements::javascript(SALAD_SLIDER_DIR . '/js/main.js');
-	}
-
+	
 	public function getCMSFields()
 	{
 		$fields = parent::getCMSFields();

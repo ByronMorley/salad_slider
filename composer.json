@@ -15,8 +15,8 @@
     "vendor-dir": "../"
   },
   "require": {
-    "silverstripe/cms": "~3.1",
-    "silverstripe/framework": "~3.1"
+    "components/jquery":"~3.3.1",
+    "components/font-awesome":"4.7.0"
   },
   "extra": {
     "installer-name": "salad-slider",
