@@ -56,6 +56,10 @@
   padding: 0;
   float: left;
   position: relative;
+  display: none;
+}
+.rs-slider > li:first-child {
+  display: block;
 }
 .rs-slider > li > a {
   padding: 0;
@@ -134,7 +138,7 @@
 .rs-caption.rs-top {
   top: 0;
   bottom: auto;
-  width: 100%!important;
+  width: 100% !important;
 }
 .rs-caption.rs-bottom {
   width: 100% !important;
@@ -623,7 +627,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url("../assets/icons/tacks.png") no-repeat -20px 0;
+  background: url("../assets/icons/tacks-fill.png") no-repeat -20px 0;
 }
 .rs-atebol-theme i.icon.circle-o {
   background-position: 0 0;

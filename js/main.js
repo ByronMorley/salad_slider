@@ -140,7 +140,7 @@
             }
 
             // Display first slide
-            this.$currentSlide.css({'opacity': 1, 'z-index': 2});
+            this.$currentSlide.css({'opacity': 1, 'z-index': 2, display: 'block'});
 
             // Trigger hardware acceleration (if supported)
             this.$sliderBG.prefixes({'transform': 'translateZ(0)'});
@@ -209,7 +209,7 @@
                 _this.next();
             }, this.delay());
         },
-        delay:function(){
+        delay: function () {
 
             return $(this.$slides[this.currentPlace]).data('options').delay;
         },
@@ -265,7 +265,7 @@
                 if (tackLocation == "rs-left" || tackLocation == "rs-right") {
                     var margin = parseInt(_this.$tackWrap.height()) / -2;
                     _this.$tackWrap.css('margin-top', margin);
-                } else if (tackLocation == "rs-top" || tackLocation == "rs-bottom" ||tackLocation == "rs-underneath") {
+                } else if (tackLocation == "rs-top" || tackLocation == "rs-bottom" || tackLocation == "rs-underneath") {
                     var margin = parseInt(_this.$tackWrap.width()) / -2;
                     _this.$tackWrap.css('margin-left', margin);
                 }
@@ -408,12 +408,10 @@
 
             // Prepare slide opacity & z-index
             this.RS.$currentSlide.css('z-index', 2);
-            this.RS.$nextSlide.css({'opacity': 1, 'z-index': 1});
-
+            this.RS.$nextSlide.css({'opacity': 1, 'z-index': 1, display: 'block'});
 
             this.RS.$currentSlide.find('.rs-caption').animate({'opacity': 0}, _this.RS.settings['transitionDuration']);
             this.RS.$nextSlide.find('.rs-caption').animate({'opacity': 1}, _this.RS.settings['transitionDuration']);
-
 
             // Check if transition describes a setup method
             if (typeof this.setup === 'function') {
@@ -432,8 +430,8 @@
 
             // Reset transition CSS
             this.RS.$slider.removeAttr('style');
-            this.RS.$currentSlide.removeAttr('style').css('opacity', 0);
-            this.RS.$nextSlide.removeAttr('style').css({'z-index': 2, 'opacity': 1});
+            this.RS.$currentSlide.removeAttr('style').css({'opacity': 0, display: 'block'});
+            this.RS.$nextSlide.removeAttr('style').css({'z-index': 2, 'opacity': 1, display: 'block'});
 
             // Additional reset steps required by transition (if any exist)
             if (typeof this.reset === 'function') this.reset();
